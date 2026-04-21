@@ -15,7 +15,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Grupo grupo = new Grupo();
+        ViewBag.grupo = grupo.devolverIntegrantes();
         return View();
+    }
+
+    public IActionResult SelectIntegrante(int dni)
+    {
+        Grupo gr = new Grupo();
+        ViewBag.gr = gr.getIntegrante(dni);
+        ViewBag.dni = dni;
+        return View("infoIntegrante");
     }
 
     public IActionResult Privacy()

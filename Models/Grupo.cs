@@ -4,7 +4,7 @@ public class Grupo
 
     public Grupo()
     {
-
+        cargaDatosManual();
     }
 
     private void cargaDatosManual()
@@ -41,12 +41,12 @@ public class Grupo
         integrantes.Add(49905586, new Integrante("Tobias", "imagenTobias.jpg", 49905586, new DateTime(2009,11,10), familiaresTobias, interesesTobias));
     }
 
-    Dic<int, integrantes> devolverIntegrantes()
+    public Dic<int, integrantes> devolverIntegrantes()
     {
         return integrantes;
     }
     
-    Integrante getIntegrante(int dni)
+    public Integrante getIntegrante(int dni)
     {
         bool resultado = integrantes.ContainsKey(dni);
         if(resultado)

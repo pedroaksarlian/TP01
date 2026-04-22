@@ -1,0 +1,17 @@
+<h1>Info del integrante: </h1>
+
+<h2>@ViewBag.gr.ObtenerNombre()</h2>
+<h2>@ViewBag.gr.ObtenerFoto()</h2>
+<h2>@ViewBag.gr.ObtenerDni()</h2>
+<h2>@ViewBag.gr.ObtenerFecha()</h2>
+<h2>Familiares: </h2>
+@foreach(string item in ViewBag.gr.ObtenerFamiliares()){
+ <p>@item</p>
+}
+<h2>Intereses: </h2>
+@foreach(string interes in ViewBag.gr.ObtenerIntereses()){
+ <p>@interes</p>
+}
+<p>
+    <a href='@Url.Action("Index", "Home")'>Volver al Inicio</a>
+</p>

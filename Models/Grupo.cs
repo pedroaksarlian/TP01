@@ -1,6 +1,6 @@
 public class Grupo
 {
-    Dictionary<int, Integrante> integrantes;
+      Dictionary<int, Integrante> integrantes = new Dictionary<int, Integrante>();
 
     public Grupo()
     {
@@ -41,7 +41,7 @@ public class Grupo
         integrantes.Add(49905586, new Integrante("Tobias", "imagenTobias.jpg", 49905586, new DateTime(2009,11,10), familiaresTobias, interesesTobias));
     }
 
-    public Dic<int, integrantes> devolverIntegrantes()
+    public Dictionary<int, Integrante> devolverIntegrantes()
     {
         return integrantes;
     }
@@ -56,4 +56,6 @@ public class Grupo
             return null;
         }
         
+    }
 }
+  

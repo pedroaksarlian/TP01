@@ -3,6 +3,13 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Grupo Chernopopo</h1>
 </div>
+
+<section>
+    @foreach(Integrante integrante in ViewBag.grupo.Values)
+    {
+        <h2>@integrante.ObtenerNombre(), @integrante.ObtenerFoto()</h2>
+        <a href='@Url.Action("SelectIntegrante","Home", new { dni = integrante.ObtenerDni() })'>Ver Detalles</a>
+    }
+</section>

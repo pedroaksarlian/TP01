@@ -25,7 +25,7 @@ public class HomeController : Controller
         Grupo gr = new Grupo();
         ViewBag.gr = gr.getIntegrante(dni);
         ViewBag.dni = dni;
-        return View("infoIntegrante");
+        return View("InfoIntegrante");
     }
 
     public IActionResult Privacy()

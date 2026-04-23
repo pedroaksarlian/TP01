@@ -18,7 +18,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  float: left;
+text-align: center;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -28,4 +30,17 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+
+.logo
+{
+height: 70%;
+width: 60%;
+}
+
+.integrante
+{
+height: 30%;
+width: 20%;
 }

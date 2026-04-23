@@ -4,13 +4,13 @@
 
 <div class="text-center">
     <h1 class="display-4">Grupo Chernopopo</h1>
-    <img src="/img/chernologo.jpg"/>
+    <img class="logo" src="/img/chernologo.jpg"/>
 </div>
 
 <section>
     @foreach(Integrante integrante in ViewBag.grupo.Values)
     {
-        <h2>@integrante.ObtenerNombre(), <img src="img/@integrante.ObtenerFoto()"/></h2>
+        <h2>@integrante.ObtenerNombre(), <img class = "integrante" src="img/@integrante.ObtenerFoto()"/></h2>
         <a href='@Url.Action("SelectIntegrante","Home", new { dni = integrante.ObtenerDni() })'>Ver Detalles</a>
     }
 </section>

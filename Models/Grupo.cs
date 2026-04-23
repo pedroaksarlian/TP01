@@ -18,7 +18,7 @@ public class Grupo
         interesesPedro.Add("Jugar al fútbol");
         interesesPedro.Add("Jugar a la play");
         interesesPedro.Add("Estar con mis amigos");
-        integrantes.Add(49554455, new Integrante("Pedro", "imagenPedro.jpg", 49554455, new DateTime(2009,07,06), familiaresPedro, interesesPedro));
+        integrantes.Add(49554455, new Integrante("Pedro", "pedro.jpg", 49554455, new DateTime(2009,07,06), familiaresPedro, interesesPedro));
         
         List<string>familiaresUriel = new List<string>();
         familiaresUriel.Add("Mamá: Yesica");
@@ -28,7 +28,7 @@ public class Grupo
         interesesUriel.Add("Jugar al Fortnite");
         interesesUriel.Add("Jugar al Futbol");
         interesesUriel.Add("Jugar al padel");
-        integrantes.Add(50156463, new Integrante("Uriel", "imagenUriel.jpg", 50156463, new DateTime(2010,04,04), familiaresUriel, interesesUriel));
+        integrantes.Add(50156463, new Integrante("Uriel", "chernopopo.jpg", 50156463, new DateTime(2010,04,04), familiaresUriel, interesesUriel));
 
         List<string>familiaresTobias = new List<string>();
         familiaresTobias.Add("Mamá: Constanza");
@@ -38,7 +38,7 @@ public class Grupo
         interesesTobias.Add("Comer hamburguesas");
         interesesTobias.Add("Mirar peliculas");
         interesesTobias.Add("Hacer boxeo");
-        integrantes.Add(49905586, new Integrante("Tobias", "imagenTobias.jpg", 49905586, new DateTime(2009,11,10), familiaresTobias, interesesTobias));
+        integrantes.Add(49905586, new Integrante("Tobias", "losi.jpg", 49905586, new DateTime(2009,11,10), familiaresTobias, interesesTobias));
     }
 
     public Dictionary<int, Integrante> devolverIntegrantes()

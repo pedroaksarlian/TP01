@@ -3,14 +3,18 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Grupo Chernopopo</h1>
+    <h1 class="display-4">¡Bienvenido al TP! Grupo Chernopopo</h1>
     <img class="logo" src="/img/chernologo.jpg"/>
+    
 </div>
 
-<section>
+<div class= "text-center">
     @foreach(Integrante integrante in ViewBag.grupo.Values)
     {
-        <h2>@integrante.ObtenerNombre(), <img class = "integrante" src="img/@integrante.ObtenerFoto()"/></h2>
+        <div class = "Persona">
+        <h2>@integrante.ObtenerNombre()</h2>
+        <img class = "integrante" src="img/@integrante.ObtenerFoto()"/> <br>
         <a href='@Url.Action("SelectIntegrante","Home", new { dni = integrante.ObtenerDni() })'>Ver Detalles</a>
+        </div>
     }
-</section>
+</div>
